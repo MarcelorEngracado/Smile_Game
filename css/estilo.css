@@ -26,7 +26,6 @@
   }
   .errou {
     text-align: center;
-    font-size: 100px;
     color: black;
     background-color: red;
     width: 150px;
@@ -36,8 +35,8 @@
     margin: 20px;
   }
   .autor {
-    margin-top: 610px;
     position: absolute;
+    margin-top: 600px;
   }
   #texto {
     text-align: center;

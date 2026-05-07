@@ -67,6 +67,15 @@
       obj.appendChild(img);
     }
 
+    function errou(obj) {
+      const img = new Image(100);
+      img.id = "imagem2";
+      //altera o atributo src (source) da imagem criada
+      img.src = "https://images.emojiterra.com/google/android-12l/512px/1f625.png";
+      //adiciona a imagem criada na div (obj) escolhida pelo jogador (appendChild)
+      obj.appendChild(img);
+    }
+
     //Função que sorteia um número aleatório entre 0 e 2 e verifica se o jogador acertou
     function verifica(obj) {
       //se jogar é verdadeiro
@@ -93,6 +102,7 @@
         } else {//se errou a tentativa
           //altera a classe da <div> escolhida pelo jogador para a classe errou
           obj.className = "errou";
+          errou(obj)
           //armazena a div aonde Smile está escondido (getElementById)
           const objSorteado = document.getElementById(sorteado);
           //chama a funçao acertou para mostrar a div aonde está o Smile
